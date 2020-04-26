@@ -1,24 +1,20 @@
 import './style.css';
-// import City from './city.jpg';
-import printMe from './print';
 
-function component() {
-    const element = document.createElement( 'div' );
-    element.innerHTML = [ 'Hello ' + 'world ' ].join();
-    element.classList.add( 'hello' );
 
-    // const myImage = new Image();
-    // myImage.src = City;
-    // element.appendChild( myImage );
+const element = document.createElement('h1');
 
-    const btn = document.createElement( 'button' );
-    btn.innerHTML = "Click me and check console";
-    btn.onclick = printMe;
-    element.appendChild( btn );
+element.innerHTML = "Hello Claudia";
 
-    return element;
-}
+element.classList.add('hello');
 
-document.body.appendChild( component() );
+document.body.appendChild(element);
 
+document.body.classList.add('body');
+
+const pankaj = document.createElement('p');
+
+pankaj.innerHTML = "I Love you Who Ever You Are ";
+pankaj.classList.add("Bye");
+
+document.body.appendChild(pankaj);
 

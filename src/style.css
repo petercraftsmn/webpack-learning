@@ -1,4 +1,15 @@
 .hello {
-    color: red;
-    background: url("./city.jpg");
+    color: rgb(231, 222, 230);
+    font-size: 4em;
+    border: turquoise dotted 50px;
+}
+
+.body {
+    background-color: rgb(11, 26, 241);
+    height: 1006px;
+}
+
+.Bye {
+    background-color: rgba(182, 17, 182, 0.609);
+    color: rgba(102, 0, 128, 0.5);
 }
