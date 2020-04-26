@@ -1,6 +1,6 @@
-const path = require( 'path' );
-const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
-const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -8,6 +8,7 @@ module.exports = {
     devServer: {
         contentBase: "./dist",
         hot: true,
+        port: 3000,
     },
     entry: {
         app: "./src/index.js",
@@ -15,7 +16,7 @@ module.exports = {
     },
     output: {
         filename: "[name].bundle.js",
-        path: path.resolve( __dirname, "dist" ),
+        path: path.resolve(__dirname, "dist"),
         publicPath: '/',
     },
     module: {
@@ -37,8 +38,8 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin( {
+        new HtmlWebpackPlugin({
             title: "Output management",
-        } ),
+        }),
     ],
 };
