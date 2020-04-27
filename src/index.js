@@ -1,20 +1,34 @@
-import './style.css';
+let websiteName;
+websiteName = document.createElement('h1');
+document.body.appendChild(websiteName);
+
+websiteName.innerHTML = "Claudia's website";
+websiteName.style.color = "red";
+websiteName.style.textAlign = "center";
+websiteName.id = "claudia";
+
+let onClickHandler;
+onClickHandler = function () {
+    websiteName.style.textAlign = "right";
+    websiteName.style.fontSize = "60px";
+};
+
+websiteName.onclick = onClickHandler;
 
 
-const element = document.createElement('h1');
-
-element.innerHTML = "Hello Claudia";
-
-element.classList.add('hello');
-
-document.body.appendChild(element);
-
-document.body.classList.add('body');
-
-const pankaj = document.createElement('p');
-
-pankaj.innerHTML = "I Love you Who Ever You Are ";
-pankaj.classList.add("Bye");
-
+let pankaj;
+pankaj = document.createElement('h2');
 document.body.appendChild(pankaj);
 
+pankaj.innerHTML = "Hi Everyone.";
+pankaj.style.color = "drak pink";
+pankaj.style.textAlign = "right";
+pankaj.id = "color";
+
+let onClickHandlerPankaj;
+onClickHandlerPankaj = function () {
+    pankaj.style.textAlign = "left";
+    pankaj.style.fontSize = "100";
+}
+
+pankaj.onclick = onClickHandlerPankaj;
