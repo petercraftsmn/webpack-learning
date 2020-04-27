@@ -1,34 +1,29 @@
-let websiteName;
-websiteName = document.createElement('h1');
-document.body.appendChild(websiteName);
-
-websiteName.innerHTML = "Claudia's website";
-websiteName.style.color = "red";
-websiteName.style.textAlign = "center";
-websiteName.id = "claudia";
-
-let onClickHandler;
-onClickHandler = function () {
-    websiteName.style.textAlign = "right";
-    websiteName.style.fontSize = "60px";
-};
-
-websiteName.onclick = onClickHandler;
+import "./style.css";
+import menuIconSvg from "./menu-24px.svg";
+import personIconSvg from "./person_outline-24px.svg";
 
 
-let pankaj;
-pankaj = document.createElement('h2');
-document.body.appendChild(pankaj);
+let navElement;
+navElement = document.createElement('nav');
+document.body.appendChild(navElement);
+navElement.classList.add("nav-element");
+navElement.classList.add("shadow");
 
-pankaj.innerHTML = "Hi Everyone.";
-pankaj.style.color = "drak pink";
-pankaj.style.textAlign = "right";
-pankaj.id = "color";
+let menuIcon;
+menuIcon = document.createElement('img');
+navElement.appendChild(menuIcon);
+menuIcon.src = menuIconSvg;
+menuIcon.classList.add('menu-icon');
 
-let onClickHandlerPankaj;
-onClickHandlerPankaj = function () {
-    pankaj.style.textAlign = "left";
-    pankaj.style.fontSize = "100";
-}
+let profileIcon;
+profileIcon = document.createElement('img');
+navElement.appendChild(profileIcon);
+profileIcon.src = personIconSvg;
+profileIcon.classList.add("profile-icon");
 
-pankaj.onclick = onClickHandlerPankaj;
+let logo;
+logo = document.createElement('h2');
+navElement.appendChild(logo);
+logo.innerHTML = "Claudia";
+logo.classList.add("logo");
+
