@@ -1,4 +1,6 @@
 import navBar from "./navbar/navbar";
+import drawer from "./drawer/drawer";
 
-navBar();
+new navBar();
+new drawer();
 
