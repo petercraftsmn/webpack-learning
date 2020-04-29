@@ -2,7 +2,9 @@ import "./navbar-style.css";
 
 
 export default class navBar {
-    constructor() {
+    constructor(data) {
+        this.logo = data.logo;
+
         let navElement;
         navElement = document.createElement('nav');
         document.body.appendChild(navElement);
@@ -29,7 +31,7 @@ export default class navBar {
         let logo;
         logo = document.createElement('h2');
         navElement.appendChild(logo);
-        logo.innerHTML = "Claudia";
+        logo.innerHTML = this.logo.text;
         logo.classList.add("logo");
     }
 

@@ -2,7 +2,9 @@
 import "./drawer-style.css";
 
 export default class Drawer {
-    constructor() {
+    constructor(data) {
+        this.logo = data.logo;
+
         // Create overlay for drawer
         let drawerOverlay = document.createElement('div');
         document.body.appendChild(drawerOverlay);
@@ -35,7 +37,7 @@ export default class Drawer {
         logo = document.createElement('div');
         drawerMain.appendChild(logo);
         logo.classList.add("drawer-logo");
-        logo.innerHTML = "Claudia";
+        logo.innerHTML = this.logo.text;
 
 
     }
