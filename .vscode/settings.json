@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 4000,
+    "editor.cursorStyle": "block",
+    "editor.tabCompletion": "on",
+    "editor.unfoldOnClickAfterEndOfLine": true,
+    "editor.formatOnSave": true
+}
