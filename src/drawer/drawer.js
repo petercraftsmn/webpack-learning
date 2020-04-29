@@ -34,7 +34,7 @@ export default class Drawer {
         let logo;
         logo = document.createElement('div');
         drawerMain.appendChild(logo);
-        logo.classList.add("logo");
+        logo.classList.add("drawer-logo");
         logo.innerHTML = "Claudia";
 
 

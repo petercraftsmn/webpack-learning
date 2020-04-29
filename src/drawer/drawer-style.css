@@ -30,7 +30,7 @@
     left: -100vw;
 }
 
-.logo {
+.drawer-logo {
     height: 70px;
     background-color: rgba(0, 81, 255, 0.527);
     border-bottom: 3px solid rgb(255, 255, 255);
@@ -45,4 +45,3 @@
         width: 50%;
     }
 }
-
