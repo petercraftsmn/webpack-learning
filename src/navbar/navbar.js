@@ -1,6 +1,5 @@
 import "./navbar-style.css";
-import menuIconSvg from "./menu-24px.svg";
-import personIconSvg from "./person_outline-24px.svg";
+
 
 export default class navBar {
     constructor() {
@@ -11,15 +10,15 @@ export default class navBar {
         navElement.classList.add("shadow");
 
         let menuIcon;
-        menuIcon = document.createElement('img');
+        menuIcon = document.createElement('div');
         navElement.appendChild(menuIcon);
-        menuIcon.src = menuIconSvg;
+        menuIcon.innerHTML = "&#9776;";
         menuIcon.classList.add('menu-icon');
 
         let profileIcon;
-        profileIcon = document.createElement('img');
+        profileIcon = document.createElement('div');
         navElement.appendChild(profileIcon);
-        profileIcon.src = personIconSvg;
+        profileIcon.innerHTML = "&#128100;";
         profileIcon.classList.add("profile-icon");
 
         let logo;
