@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     z-index: 1000000;
+    transition: left 0.5s;
 }
 
 .drawer-main {
@@ -25,8 +26,4 @@
 
 .drawer-invisible {
     left: -100vw;
-}
-
-.drawer-visible {
-    width: 100vh;
 }
