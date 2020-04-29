@@ -16,7 +16,7 @@ export default class Drawer {
         drawerMain.classList.add('drawer-main');
 
         // Open drawer
-        document.querySelector('.menu-icon').onclick = function (event) {
+        document.querySelector('.menu-icon-wrapper').onclick = function (event) {
             event.stopPropagation();
             event.preventDefault();
             drawerOverlay.classList.remove('drawer-invisible');

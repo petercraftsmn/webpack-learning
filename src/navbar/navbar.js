@@ -9,9 +9,14 @@ export default class navBar {
         navElement.classList.add("nav-element");
         navElement.classList.add("shadow");
 
+        let menuIconWrapper;
+        menuIconWrapper = document.createElement('div');
+        navElement.appendChild(menuIconWrapper);
+        menuIconWrapper.classList.add('menu-icon-wrapper');
+
         let menuIcon;
         menuIcon = document.createElement('div');
-        navElement.appendChild(menuIcon);
+        menuIconWrapper.appendChild(menuIcon);
         menuIcon.innerHTML = "&#9776;";
         menuIcon.classList.add('menu-icon');
 
